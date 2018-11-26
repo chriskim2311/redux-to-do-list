@@ -18,7 +18,6 @@ class AddItem extends Component {
         )
     }
     handleAddItem = async (values) => {
-        console.log('Form Values:', values)
         await this.props.addToDoItem(values);
         
         this.props.history.push('/');
